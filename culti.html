@@ -78,7 +78,7 @@
       fetch(RSS_URL)
         .then(function (r) { return r.json(); })
         .then(function (data) {
-          const videos = data.items;
+          const videos = data.items.reverse();
           if (!videos || !videos.length) throw new Error('no items');
           grid.innerHTML = videos.map(function (item) {
             const videoId = new URL(item.link).searchParams.get('v');
