@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/brand-assets\")",
+      "Bash(cp \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/brand-assetslogo.png.jpg\" \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/brand-assets/logo.png\")",
+      "Bash(mkdir -p \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/css\" \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/js\")",
+      "Bash(npx puppeteer:*)",
+      "Bash(node screenshot.js)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(gh repo:*)",
+      "Bash(python3:*)",
+      "Bash(node -e ':*)",
+      "Bash(node screenshot2.js)",
+      "Bash(node screenshot_new.js)",
+      "Bash(dir C:\\\\Users\\\\vince\\\\Desktop\\\\Chiesa ADI Palermo Noce\\\\brand-assets:*)"
+    ]
+  }
+}
