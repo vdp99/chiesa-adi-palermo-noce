@@ -62,85 +62,60 @@
       <p class="fade-up">Tutti i culti vengono registrati e pubblicati sulla nostra playlist YouTube. Guarda, condividi e torna quante volte vuoi.</p>
     </div>
 
-    <div class="video-grid">
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=1"
-                  title="Culto 1 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Culto Domenicale</h4>
-          <p>Predicazione e adorazione dalla nostra riunione domenicale.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=2"
-                  title="Culto 2 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Culto del Giovedì</h4>
-          <p>Il messaggio infrasettimanale per nutrire la fede durante la settimana.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=3"
-                  title="Culto 3 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Predicazione speciale</h4>
-          <p>Un messaggio che ha toccato i cuori della nostra comunità.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=4"
-                  title="Culto 4 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Culto Domenicale</h4>
-          <p>La Parola di Dio proclamata durante il nostro incontro domenicale.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=5"
-                  title="Culto 5 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Riunione di preghiera</h4>
-          <p>Un momento speciale di intercessione e preghiera comunitaria.</p>
-        </div>
-      </div>
-
-      <div class="video-card">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3&index=6"
-                  title="Culto 6 — Chiesa ADI Palermo Noce"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen loading="lazy"></iframe>
-        </div>
-        <div class="video-card-body">
-          <h4>Culto del Giovedì</h4>
-          <p>Adorazione e Parola per ricaricarsi a metà settimana.</p>
-        </div>
+    <div class="video-grid" id="videoGrid">
+      <div style="grid-column:1/-1;text-align:center;padding:3rem 0;color:var(--gray-text)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:block;margin:0 auto 1rem;opacity:.4"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/></svg>
+        Caricamento video in corso…
       </div>
     </div>
+
+    <script>
+    (function () {
+      const PLAYLIST_ID = 'PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3';
+      const FEED_URL = 'https://www.youtube.com/feeds/videos.xml?playlist_id=' + PLAYLIST_ID;
+      const PROXY = 'https://api.allorigins.win/get?url=' + encodeURIComponent(FEED_URL);
+
+      async function loadVideos() {
+        const grid = document.getElementById('videoGrid');
+        try {
+          const res = await fetch(PROXY);
+          if (!res.ok) throw new Error('Network error');
+          const json = await res.json();
+          const parser = new DOMParser();
+          const xml = parser.parseFromString(json.contents, 'application/xml');
+          const entries = Array.from(xml.querySelectorAll('entry'));
+
+          if (!entries.length) throw new Error('No entries');
+
+          grid.innerHTML = entries.map(entry => {
+            const videoId = (entry.querySelector('videoId') || entry.querySelector('[name="videoId"]'))?.textContent
+                         || (entry.querySelector('id')?.textContent || '').replace(/.*:/, '');
+            const title = entry.querySelector('title')?.textContent || 'Culto';
+            const published = entry.querySelector('published')?.textContent || '';
+            const dateStr = published ? new Date(published).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+            return `<div class="video-card">
+              <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/${videoId}"
+                        title="${title.replace(/"/g,'&quot;')}"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-body">
+                <h4>${title}</h4>
+                ${dateStr ? `<p>${dateStr}</p>` : ''}
+              </div>
+            </div>`;
+          }).join('');
+        } catch (err) {
+          grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:2rem 0;color:var(--gray-text)">
+            Impossibile caricare i video. <a href="https://www.youtube.com/playlist?list=${PLAYLIST_ID}" target="_blank" rel="noopener" style="color:var(--blue)">Vedi la playlist su YouTube</a>.
+          </div>`;
+        }
+      }
+
+      loadVideos();
+    })();
+    </script>
 
     <!-- Playlist link -->
     <div class="text-center mt-4">
@@ -170,7 +145,6 @@
 <div class="cta-band">
   <div class="container">
     <h2 class="fade-up">Vieni a vivere il culto di persona</h2>
-    <p class="fade-up">I video sono belli, ma nulla sostituisce l'esperienza di adorare insieme. Ogni domenica ore 10:00.</p>
     <div class="cta-buttons fade-up">
       <a href="contatti.html" class="btn btn-outline">Dove siamo</a>
       <a href="attivita.html" class="btn btn-primary">Tutti gli orari</a>
