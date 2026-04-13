@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti — Chiesa ADI Palermo Noce</title>
+  <meta name="description" content="Contatta la Chiesa ADI Palermo Noce. Siamo in Via G. Savagnone, 13 a Palermo. Telefono: 091 303296." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand-assets/logo.png" alt="Logo Chiesa ADI Palermo Noce" />
+        <div class="nav-logo-text">
+          Chiesa ADI Palermo Noce
+          <span>Chiesa Cristiana Evangelica</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attivita.html">Attività</a></li>
+        <li><a href="culti.html">Culti</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contatti.html" class="active">Contatti</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://www.youtube.com/playlist?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq?si=fda9ae6869cb4ac3" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:.75rem">Siamo qui per te</span>
+    <h1>Contattaci</h1>
+    <p>Hai domande? Vuoi saperne di più? Hai bisogno di preghiera? Scrivici o vieni a trovarci.</p>
+  </div>
+</div>
+
+<!-- CONTATTI + FORM -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-info">
+        <div>
+          <span class="section-label fade-up">Dove siamo</span>
+          <h2 class="fade-up" style="margin-top:.75rem;margin-bottom:1.5rem">Vieni a trovarci</h2>
+        </div>
+
+        <div class="contact-item fade-up">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <strong>Indirizzo</strong>
+            <a href="https://maps.google.com/?q=Via+G.+Savagnone+13+Palermo" target="_blank" rel="noopener">Via G. Savagnone, 13<br>90135 Palermo, PA</a>
+          </div>
+        </div>
+
+        <div class="contact-item fade-up">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.82-.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16.09l.5.83z"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <strong>Telefono</strong>
+            <a href="tel:091303296">091 303296</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <strong>Orari dei culti</strong>
+            <table class="hours-table" style="margin-top:.5rem">
+              <tr><td>Domenica</td><td>10:00 — Culto</td></tr>
+              <tr><td>Lunedì</td><td>19:00 — Preghiera</td></tr>
+              <tr><td>Martedì</td><td>21:00 — Studio online</td></tr>
+              <tr><td>Mercoledì</td><td>21:30 — Preghiera</td></tr>
+              <tr><td>Giovedì</td><td>19:00 — Culto</td></tr>
+              <tr><td>Venerdì</td><td>21:30 — Giovani</td></tr>
+              <tr><td>Sabato</td><td>17:00 — Adolescenti</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="fade-up">
+          <strong style="font-size:.85rem;display:block;margin-bottom:.75rem;color:var(--text)">Seguici sui social</strong>
+          <div style="display:flex;flex-wrap:wrap;gap:.6rem">
+            <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;padding:.55rem 1rem;border-radius:8px;background:var(--gray-bg);color:var(--text);transition:var(--transition)"
+               onmouseover="this.style.background='var(--blue-light)';this.style.color='var(--blue)'"
+               onmouseout="this.style.background='var(--gray-bg)';this.style.color='var(--text)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;padding:.55rem 1rem;border-radius:8px;background:var(--gray-bg);color:var(--text);transition:var(--transition)"
+               onmouseover="this.style.background='var(--blue-light)';this.style.color='var(--blue)'"
+               onmouseout="this.style.background='var(--gray-bg)';this.style.color='var(--text)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;padding:.55rem 1rem;border-radius:8px;background:var(--gray-bg);color:var(--text);transition:var(--transition)"
+               onmouseover="this.style.background='var(--blue-light)';this.style.color='var(--blue)'"
+               onmouseout="this.style.background='var(--gray-bg)';this.style.color='var(--text)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+            <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq?si=fda9ae6869cb4ac3" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;padding:.55rem 1rem;border-radius:8px;background:var(--gray-bg);color:var(--text);transition:var(--transition)"
+               onmouseover="this.style.background='#E8F5E9';this.style.color='#1DB954'"
+               onmouseout="this.style.background='var(--gray-bg)';this.style.color='var(--text)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form fade-up">
+        <h3>Inviaci un messaggio</h3>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome e cognome</label>
+            <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Indirizzo email</label>
+            <input type="email" id="email" name="email" placeholder="la-tua@email.it" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Oggetto</label>
+            <input type="text" id="subject" name="subject" placeholder="Come possiamo aiutarti?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio qui…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Invia messaggio
+          </button>
+          <p style="font-size:.78rem;color:var(--gray-text);text-align:center;margin-top:.75rem">
+            Il tasto aprirà il tuo client email con il messaggio precompilato.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPPA -->
+<section class="gray">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label fade-up">Come raggiungerci</span>
+      <h2 class="fade-up">Siamo a Palermo</h2>
+      <p class="fade-up">Via G. Savagnone, 13 · Palermo · Quartiere Noce</p>
+    </div>
+
+    <div class="map-wrap fade-up" style="height:420px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1234567890!2d13.34!3d38.11!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1319ef3d94df24d1%3A0x0!2sVia+G.+Savagnone%2C+13%2C+90135+Palermo+PA!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mappa Chiesa ADI Palermo Noce — Via G. Savagnone 13, Palermo"></iframe>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://maps.google.com/?q=Via+G.+Savagnone+13+Palermo"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Apri in Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="brand-assets/logo.png" alt="Logo" />
+          <div class="footer-logo-text">Chiesa ADI Palermo Noce<span>Chiesa Cristiana Evangelica</span></div>
+        </div>
+        <p>Una comunità cristiana evangelica nel cuore di Palermo.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.youtube.com/playlist?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq?si=fda9ae6869cb4ac3" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pagine</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attivita.html">Attività</a></li>
+          <li><a href="culti.html">Culti</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Orari</h4>
+        <ul>
+          <li><a href="attivita.html">Dom · 10:00 — Culto</a></li>
+          <li><a href="attivita.html">Lun · 19:00 — Preghiera</a></li>
+          <li><a href="attivita.html">Mar · 21:00 — Studio</a></li>
+          <li><a href="attivita.html">Mer · 21:30 — Preghiera</a></li>
+          <li><a href="attivita.html">Gio · 19:00 — Culto</a></li>
+          <li><a href="attivita.html">Ven · 21:30 — Giovani</a></li>
+          <li><a href="attivita.html">Sab · 17:00 — Adolescenti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Dove siamo</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?q=Via+G.+Savagnone+13+Palermo" target="_blank" rel="noopener">Via G. Savagnone, 13<br>Palermo</a></li>
+          <li><a href="tel:091303296">091 303296</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Chiesa ADI Palermo Noce. Tutti i diritti riservati.</span>
+      <span>Parte delle <a href="https://www.adi.it" target="_blank" rel="noopener">Assemblee di Dio in Italia</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
