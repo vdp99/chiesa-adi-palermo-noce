@@ -72,48 +72,37 @@
     <script>
     (function () {
       const PLAYLIST_ID = 'PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3';
-      const FEED_URL = 'https://www.youtube.com/feeds/videos.xml?playlist_id=' + PLAYLIST_ID;
-      const PROXY = 'https://api.allorigins.win/get?url=' + encodeURIComponent(FEED_URL);
+      const RSS_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?playlist_id=' + PLAYLIST_ID);
+      const grid = document.getElementById('videoGrid');
 
-      async function loadVideos() {
-        const grid = document.getElementById('videoGrid');
-        try {
-          const res = await fetch(PROXY);
-          if (!res.ok) throw new Error('Network error');
-          const json = await res.json();
-          const parser = new DOMParser();
-          const xml = parser.parseFromString(json.contents, 'application/xml');
-          const entries = Array.from(xml.querySelectorAll('entry'));
-
-          if (!entries.length) throw new Error('No entries');
-
-          grid.innerHTML = entries.map(entry => {
-            const videoId = (entry.querySelector('videoId') || entry.querySelector('[name="videoId"]'))?.textContent
-                         || (entry.querySelector('id')?.textContent || '').replace(/.*:/, '');
-            const title = entry.querySelector('title')?.textContent || 'Culto';
-            const published = entry.querySelector('published')?.textContent || '';
-            const dateStr = published ? new Date(published).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-            return `<div class="video-card">
-              <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/${videoId}"
-                        title="${title.replace(/"/g,'&quot;')}"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-card-body">
-                <h4>${title}</h4>
-                ${dateStr ? `<p>${dateStr}</p>` : ''}
-              </div>
-            </div>`;
+      fetch(RSS_URL)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          const videos = data.items;
+          if (!videos || !videos.length) throw new Error('no items');
+          grid.innerHTML = videos.map(function (item) {
+            const videoId = new URL(item.link).searchParams.get('v');
+            const date = new Date(item.pubDate).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
+            return '<div class="video-card">'
+              + '<div class="video-embed">'
+              + '<iframe src="https://www.youtube.com/embed/' + videoId + '"'
+              + ' title="' + item.title.replace(/"/g, '&quot;') + '"'
+              + ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"'
+              + ' allowfullscreen loading="lazy"></iframe>'
+              + '</div>'
+              + '<div class="video-card-body">'
+              + '<h4>' + item.title + '</h4>'
+              + '<p>' + date + '</p>'
+              + '</div>'
+              + '</div>';
           }).join('');
-        } catch (err) {
-          grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:2rem 0;color:var(--gray-text)">
-            Impossibile caricare i video. <a href="https://www.youtube.com/playlist?list=${PLAYLIST_ID}" target="_blank" rel="noopener" style="color:var(--blue)">Vedi la playlist su YouTube</a>.
-          </div>`;
-        }
-      }
-
-      loadVideos();
+        })
+        .catch(function () {
+          grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem 0;color:var(--gray-text)">'
+            + 'Impossibile caricare i video. '
+            + '<a href="https://www.youtube.com/playlist?list=' + PLAYLIST_ID + '" target="_blank" rel="noopener" style="color:var(--blue)">Vedi la playlist su YouTube</a>.'
+            + '</div>';
+        });
     })();
     </script>
 
