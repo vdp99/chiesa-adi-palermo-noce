@@ -4,27 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog — Chiesa ADI Palermo Noce</title>
-  <meta name="description" content="Leggi gli articoli del blog della Chiesa ADI Palermo Noce: riflessioni bibliche, testimonianze e approfondimenti sulla fede cristiana." />
+  <meta name="description" content="Articoli, meditazioni bibliche, aiuto spirituale e riflessioni di attualità dalla Chiesa ADI Palermo Noce." />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="js/main.js" defer></script>
-  <style>
-    .blog-featured {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 1.75rem;
-      margin-bottom: 1.75rem;
-    }
-    .blog-featured .blog-card:first-child .blog-img { aspect-ratio: 16/8; }
-    .blog-featured .blog-card:last-child { display: flex; flex-direction: column; gap: 1.75rem; }
-    .blog-featured .blog-card:last-child .blog-img { aspect-ratio: 16/7; }
-
-    @media (max-width: 768px) {
-      .blog-featured { grid-template-columns: 1fr; }
-      .blog-featured .blog-card:last-child { gap: 1.75rem; }
-    }
-  </style>
 </head>
 <body>
 
@@ -34,13 +18,11 @@
     <nav class="nav-inner">
       <a href="index.html" class="nav-logo">
         <img src="brand-assets/logo.png" alt="Logo Chiesa ADI Palermo Noce" />
-        <div class="nav-logo-text">
-          Chiesa ADI Palermo Noce
-          <span>Chiesa Cristiana Evangelica</span>
-        </div>
+        <div class="nav-logo-text">Chiesa ADI Palermo Noce<span>Chiesa Cristiana Evangelica</span></div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
         <li><a href="attivita.html">Attività</a></li>
         <li><a href="culti.html">Culti</a></li>
         <li><a href="blog.html" class="active">Blog</a></li>
@@ -50,7 +32,7 @@
         <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
         <a href="https://www.youtube.com/playlist?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-        <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq?si=fda9ae6869cb4ac3" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+        <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
       </div>
       <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -64,158 +46,269 @@
   <div class="container">
     <span class="section-label" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:.75rem">Riflessioni &amp; Parola</span>
     <h1>Blog</h1>
-    <p>Articoli, riflessioni bibliche e testimonianze per nutrire la fede ogni giorno.</p>
+    <p>Meditazioni bibliche, aiuto spirituale e riflessioni di attualità per nutrire la fede ogni giorno.</p>
   </div>
 </div>
 
-<!-- BLOG GRID -->
+<!-- ════════════ BLOG CONTENT ════════════ -->
 <section>
   <div class="container">
 
-    <!-- Featured row -->
-    <div class="blog-featured">
+    <!-- ── MEDITAZIONI ── -->
+    <div class="blog-cat-header">
+      <span class="section-label cat-meditazioni" style="font-size:.72rem">Meditazioni</span>
+    </div>
+    <div class="blog-grid">
+
       <div class="blog-card">
         <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800"
-               alt="La preghiera che cambia tutto" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=800"
+               alt="Niente scalpello sulla Parola di Dio" loading="lazy" />
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="cat">Preghiera</span>
-            <span>8 Aprile 2024</span>
+            <span class="cat cat-meditazioni">Meditazioni</span>
           </div>
-          <h3>La preghiera che cambia tutto</h3>
-          <p>Scopri perché la preghiera non è solo una pratica religiosa, ma il dialogo più importante della tua vita. Quando impariamo a pregare davvero, tutto cambia — dentro e fuori di noi.</p>
-          <a href="#" class="blog-read">
+          <h3>Niente scalpello sulla Parola di Dio!</h3>
+          <p>Il rischio di modificare la Parola di Dio per adattarla ai propri desideri. Dio non smentisce se stesso e tutto quello che si crede deve essere in armonia con le Sacre Scritture.</p>
+          <a href="blog-niente-scalpello.html" class="blog-read">
             Leggi di più
             <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
       </div>
 
-      <div>
-        <div class="blog-card">
-          <div class="blog-img">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
-                 alt="Cosa significa far parte di una comunità" loading="lazy" />
-          </div>
-          <div class="blog-body">
-            <div class="blog-meta">
-              <span class="cat">Comunità</span>
-              <span>2 Aprile 2024</span>
-            </div>
-            <h3>Cosa significa far parte di una comunità</h3>
-            <p>La fede non è un viaggio solitario. Dio ci ha creati per stare insieme, camminare insieme, crescere insieme.</p>
-            <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Regular grid -->
-    <div class="blog-grid">
-
       <div class="blog-card">
         <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=800"
-               alt="Quando Dio sembra lontano" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800"
+               alt="Qualcosa da scoprire" loading="lazy" />
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="cat">Fede</span>
-            <span>25 Marzo 2024</span>
+            <span class="cat cat-meditazioni">Meditazioni</span>
           </div>
-          <h3>Quando Dio sembra lontano</h3>
-          <p>Tutti attraversiamo momenti di siccità spirituale. Come attraversare il deserto senza perdere la fede — una riflessione onesta e biblica.</p>
-          <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Qualcosa da scoprire</h3>
+          <p>Ogni giorno la Parola di Dio rivela qualcosa di nuovo a chi la legge con cuore aperto. La Bibbia non è un libro esaurito — è una sorgente inesauribile.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800"
+               alt="Se Gesù venisse a casa tua" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-meditazioni">Meditazioni</span>
+          </div>
+          <h3>Se Gesù venisse a casa tua</h3>
+          <p>Una riflessione sull'ospitalità spirituale: cosa cambierebbe nella nostra vita quotidiana se Gesù fosse davvero al centro di ogni cosa?</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
       <div class="blog-card">
         <div class="blog-img">
           <img src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=800"
-               alt="Giovani e fede" loading="lazy" />
+               alt="Due domande importanti" loading="lazy" />
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="cat">Giovani</span>
-            <span>18 Marzo 2024</span>
+            <span class="cat cat-meditazioni">Meditazioni</span>
           </div>
-          <h3>Essere giovani e credenti oggi</h3>
-          <p>Come vivere la fede cristiana nel 2024, in una generazione che sfida tutto e cerca risposte vere. La storia di alcuni giovani della nostra chiesa.</p>
-          <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Due domande importanti</h3>
+          <p>Le due domande fondamentali che ogni essere umano si trova ad affrontare almeno una volta nella vita — e le risposte che il Vangelo offre.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
       <div class="blog-card">
         <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&auto=format&fit=crop&crop=top"
-               alt="La Bibbia e la vita quotidiana" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800"
+               alt="Un altro compleanno" loading="lazy" />
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="cat">Studio biblico</span>
-            <span>11 Marzo 2024</span>
+            <span class="cat cat-meditazioni">Meditazioni</span>
           </div>
-          <h3>La Bibbia parla ancora oggi</h3>
-          <p>Come un libro antico di migliaia di anni può ancora rispondere alle domande più urgenti della nostra vita moderna. Un approccio pratico allo studio della Parola.</p>
-          <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Un altro compleanno</h3>
+          <p>Il tempo passa, gli anni si accumulano. Ma ogni anno è un dono di Dio e un'opportunità per riflettere su chi siamo e dove stiamo andando.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
       <div class="blog-card">
         <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=800&auto=format&fit=crop&crop=center"
-               alt="Il perdono che libera" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800"
+               alt="Per orientarsi" loading="lazy" />
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="cat">Testimonianza</span>
-            <span>4 Marzo 2024</span>
+            <span class="cat cat-meditazioni">Meditazioni</span>
           </div>
-          <h3>Il perdono che mi ha liberato</h3>
-          <p>Una testimonianza vera su come perdonare qualcuno che ci ha fatto del male sia possibile — e trasformante. Una storia dalla nostra comunità.</p>
-          <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&crop=center"
-               alt="Servire è il cuore del Vangelo" loading="lazy" />
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="cat">Missione</span>
-            <span>25 Febbraio 2024</span>
-          </div>
-          <h3>Servire è il cuore del Vangelo</h3>
-          <p>Gesù non è venuto per essere servito, ma per servire. Come la sua mentalità da servo può trasformare il modo in cui viviamo la fede ogni giorno.</p>
-          <a href="#" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3>Per orientarsi...</h3>
+          <p>In un mondo che spinge in mille direzioni, come si trova il Nord? La Parola di Dio è la bussola affidabile per ogni stagione della vita.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </div>
 
     </div>
+
+    <!-- ── AIUTO SPIRITUALE ── -->
+    <div class="blog-cat-header">
+      <span class="section-label cat-spirituale" style="font-size:.72rem">Aiuto Spirituale</span>
+    </div>
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=800&auto=format&fit=crop&crop=top"
+               alt="Gli affanni della vita" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Gli affanni della vita</h3>
+          <p>Ogni persona si trova ad affrontare momenti di difficoltà e scoraggiamento. Le Scritture ci offrono consolazione e speranza nei momenti più difficili.</p>
+          <a href="blog-affanni-vita.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800"
+               alt="Delusioni nel servizio cristiano" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Delusioni nel servizio cristiano</h3>
+          <p>Chi serve il Signore con dedizione può attraversare momenti di stanchezza e delusione. La Parola di Dio offre rinnovamento e una prospettiva eterna.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&fit=crop&crop=center"
+               alt="Depressione" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Depressione</h3>
+          <p>La depressione è una realtà che molti credenti affrontano. Anche i grandi personaggi biblici l'hanno vissuta. La Parola offre risorse preziose.</p>
+          <a href="blog-depressione.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1514454939-65f3c25e9c3c?w=800"
+               alt="Dipendenze da vizi e cattive abitudini" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Dipendenze da vizi e cattive abitudini</h3>
+          <p>La liberazione dalle dipendenze è possibile con l'aiuto di Dio. Il Vangelo porta vera libertà a chi è in catene, qualunque forma abbiano quelle catene.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&auto=format&fit=crop&crop=center"
+               alt="Dubbio interiore" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Dubbio interiore</h3>
+          <p>Il dubbio è una delle esperienze più comuni nella vita del credente. La fede non è assenza di dubbio, ma la scelta di fidarsi di Dio anche quando non si vede chiaramente.</p>
+          <a href="blog-dubbio-interiore.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&crop=center"
+               alt="Sofferenze" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Sofferenze</h3>
+          <p>Perché soffre chi ama Dio? Una domanda antica e una risposta biblica: la sofferenza non è l'ultima parola — la gloria futura supera ogni dolore presente.</p>
+          <a href="blog.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&auto=format&fit=crop&crop=right"
+               alt="Solitudine" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-spirituale">Aiuto Spirituale</span>
+          </div>
+          <h3>Solitudine</h3>
+          <p>La solitudine è una delle esperienze più difficili. Ma Dio dice: "Non ti lascerò né ti abbandonerò." Non siamo mai soli, anche nei momenti più bui.</p>
+          <a href="blog-solitudine.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── ATTUALITÀ ── -->
+    <div class="blog-cat-header">
+      <span class="section-label cat-attualita" style="font-size:.72rem">Attualità</span>
+    </div>
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800"
+               alt="Il rapporto di coppia" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat cat-attualita">Attualità</span>
+          </div>
+          <h3>Il rapporto di coppia — Problematiche e prospettive bibliche</h3>
+          <p>La famiglia è il nucleo fondamentale della società. Come credenti evangelici affrontiamo le sfide del matrimonio con i principi biblici: dialogo, ruoli, sessualità, relazioni esterne.</p>
+          <a href="blog-rapporto-di-coppia.html" class="blog-read">Leggi di più <svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
-<!-- NEWSLETTER CTA -->
+<!-- SOCIAL CTA -->
 <section class="gray">
-  <div class="container">
-    <div style="max-width:560px;margin:0 auto;text-align:center">
-      <span class="section-label fade-up">Rimani aggiornato</span>
-      <h2 class="fade-up">Nuovi articoli ogni settimana</h2>
-      <p class="fade-up">Seguici sui social per non perdere nuovi articoli, messaggi e aggiornamenti dalla nostra comunità.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem" class="fade-up">
-        <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          Seguici su Instagram
-        </a>
-        <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" class="btn btn-outline-blue">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          Facebook
-        </a>
-      </div>
+  <div class="container" style="max-width:560px;margin:0 auto;text-align:center">
+    <span class="section-label fade-up">Rimani aggiornato</span>
+    <h2 class="fade-up">Nuovi contenuti ogni settimana</h2>
+    <p class="fade-up">Seguici sui social per non perdere nuovi articoli, messaggi e aggiornamenti dalla nostra comunità.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem" class="fade-up">
+      <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Seguici su Instagram
+      </a>
+      <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" class="btn btn-outline-blue">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
     </div>
   </div>
 </section>
@@ -234,13 +327,14 @@
           <a href="https://www.instagram.com/chiesaadipalermo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
           <a href="https://www.facebook.com/chiesaadipalermo" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
           <a href="https://www.youtube.com/playlist?list=PLgoU4Pgp_MNgvHWhIfp7NLGrxXuLIQJv3" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-          <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq?si=fda9ae6869cb4ac3" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+          <a href="https://open.spotify.com/show/7ikDmdK8Y1XODwhmMAkDoq" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
         <h4>Pagine</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi siamo</a></li>
           <li><a href="attivita.html">Attività</a></li>
           <li><a href="culti.html">Culti</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -248,13 +342,11 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Categorie</h4>
+        <h4>Categorie Blog</h4>
         <ul>
-          <li><a href="#">Preghiera</a></li>
-          <li><a href="#">Comunità</a></li>
-          <li><a href="#">Studio biblico</a></li>
-          <li><a href="#">Giovani</a></li>
-          <li><a href="#">Testimonianze</a></li>
+          <li><a href="blog.html">Meditazioni</a></li>
+          <li><a href="blog.html">Aiuto Spirituale</a></li>
+          <li><a href="blog.html">Attualità</a></li>
         </ul>
       </div>
       <div class="footer-col">
