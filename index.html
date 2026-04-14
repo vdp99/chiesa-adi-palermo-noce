@@ -285,7 +285,7 @@
       fetch(RSS_URL)
         .then(function (r) { return r.json(); })
         .then(function (data) {
-          const videos = data.items.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate)).slice(0, 3);
+          const videos = data.items.reverse().slice(0, 3);
           if (!videos.length) throw new Error('no items');
           grid.innerHTML = videos.map(function (item) {
             const videoId = new URL(item.link).searchParams.get('v');
