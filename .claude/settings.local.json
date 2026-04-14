@@ -13,7 +13,15 @@
       "Bash(node -e ':*)",
       "Bash(node screenshot2.js)",
       "Bash(node screenshot_new.js)",
-      "Bash(dir C:\\\\Users\\\\vince\\\\Desktop\\\\Chiesa ADI Palermo Noce\\\\brand-assets:*)"
+      "Bash(dir C:\\\\Users\\\\vince\\\\Desktop\\\\Chiesa ADI Palermo Noce\\\\brand-assets:*)",
+      "Bash(sed -i 's|src=\"brand-assets/|src=\"/brand-assets/|g' attivita.html blog-affanni-vita.html blog-depressione.html blog-dubbio-interiore.html blog-niente-scalpello.html blog-rapporto-di-coppia.html blog-solitudine.html blog.html chi-siamo.html contatti.html culti.html index.html)",
+      "Bash(sed -i \"s|url\\('../brand-assets/|url\\('/brand-assets/|g\" css/style.css)",
+      "Bash(sed -i \"s|url\\('https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=1400'\\)|url\\('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=1400'\\)|g\" blog-niente-scalpello.html)",
+      "Bash(sed -i \"s|url\\('https://images.unsplash.com/photo-1476055439777-977cdf3a5699?w=1400&auto=format&fit=crop&crop=top'\\)|url\\('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=1400'\\)|g\" blog-affanni-vita.html)",
+      "Bash(sed -i \"s|url\\('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1400&auto=format&fit=crop&crop=center'\\)|url\\('https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=1400'\\)|g\" blog-depressione.html)",
+      "Bash(sed -i \"s|url\\('https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=1400&auto=format&fit=crop&crop=center'\\)|url\\('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400'\\)|g\" blog-dubbio-interiore.html)",
+      "Bash(sed -i \"s|url\\('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1400'\\)|url\\('https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?w=1400'\\)|g\" blog-rapporto-di-coppia.html)",
+      "Bash(ls \"C:/Users/vince/Desktop/Chiesa ADI Palermo Noce/blog\"*.html)"
     ]
   }
 }
