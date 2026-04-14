@@ -671,7 +671,7 @@ section.gray { background: var(--gray-bg); }
   align-items: center;
   gap: .75rem;
 }
-.footer-logo img { height: 44px; filter: brightness(0) invert(1); opacity: .85; }
+.footer-logo img { height: 44px; width: auto; }
 .footer-logo-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
