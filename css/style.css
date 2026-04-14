@@ -961,6 +961,10 @@ section.gray { background: var(--gray-bg); }
 .cat-meditazioni   { background: var(--blue-light); color: var(--blue); }
 .cat-spirituale    { background: #E8F5E9; color: #1B5E20; }
 .cat-attualita     { background: #FFF3E0; color: #BF360C; }
+.cat-studi         { background: #EDE7F6; color: #4527A0; }
+.cat-biografie     { background: #E0F4F1; color: #004D40; }
+.cat-storia        { background: #FFF8E1; color: #E65100; }
+.cat-intro         { background: #F5F5F5; color: #424242; }
 
 /* ── Blog category section header ── */
 .blog-cat-header {
